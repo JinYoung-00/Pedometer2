@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:indeterminate="false"
+            android:layout_margin="100dp"
+            android:progressBackgroundTint="#CFCFCF"
+            android:progressDrawable="@drawable/circular"
+            android:progressTint="#477E25" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="142dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="150dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="100sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="139dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/settings"
+
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
